@@ -1,0 +1,18 @@
+#include <iostream>
+#include <string>
+#include <math.h>
+
+using namespace std;
+
+ int x;
+ int y;
+ float c;
+
+ 
+int main()
+{ 
+  cin >> x >> y;
+  c = (fabs(x) - fabs(y)) / (1 + fabs(x * y));
+  cout << "C: " << c << endl;
+  return 0; 
+}
