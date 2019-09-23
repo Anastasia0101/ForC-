@@ -1,0 +1,31 @@
+#include <iostream>
+#include <string>
+#include <math.h>
+
+using namespace std;
+
+ int vf;
+ int vs;
+ int tf;
+ int ts;
+ int v;
+ int t;
+ 
+int main() {
+  cout << "V1: "<< endl;
+  cin >> vf;
+  cout << "V2: "<< endl;
+  cin >> vs;
+  cout << "t1: "<< endl;
+  cin >> tf;
+  cout << "t2: "<< endl;
+  cin >> ts; 
+  
+  v = vf + vs;
+  t = (vf * tf + vs * ts) / v;
+  
+  cout << "V: " << v << endl;
+  cout << "t: " << t << endl;
+  
+  return 0; 
+}
