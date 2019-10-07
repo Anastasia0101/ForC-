@@ -1,0 +1,42 @@
+
+#include <iostream>
+#include <string>
+#include <math.h>
+
+using namespace std;
+
+int main() {
+    int a, b, c;
+    float p;
+    float h1, h2, h3;
+    float m1, m2, m3;
+    float r, R, S;
+    
+    cout << "Input a: ";
+    cin >> a;
+    cout << "Input b: ";
+    cin >> b;
+    cout << "Input c: ";
+    cin >> c;
+   
+    S = (sqrt((a + b + c) * (b + c - a) * (a + c - b) * (a + b - c))) / 4; 
+    p = (a + b + c) / 2;
+    h1 = (2 * S) / a;
+    h2 = (2 * S) / b;
+    h3 = (2 * S) / c;
+    m1 = (sqrt(2 * pow(a,2) + 2 * pow(b,2) - pow(c,2))) / 2; 
+    m2 = (sqrt(2 * pow(b,2) + 2 * pow(c,2) - pow(a,2))) / 2;
+    m3 = (sqrt(2 * pow(a,2) + 2 * pow(c,2) - pow(c,2))) / 2;
+    r = S / p;
+    R = (a * b * c) / (4 * S);
+    
+    cout << "h1 = " << h1 << endl;
+    cout << "h2 = " << h2 << endl;
+    cout << "h3 = " << h3 << endl;
+    cout << "m1 = " << m1 << endl;
+    cout << "m2 = " << m2 << endl;
+    cout << "m3 = " << m3 << endl;
+    cout << "r = " << r << endl;
+    cout << "R = " << R << endl;
+  return 0; 
+}
