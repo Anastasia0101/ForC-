@@ -1,0 +1,27 @@
+
+#include <iostream>
+#include <string>
+#include <math.h>
+
+using namespace std;
+
+int main() {
+    int a;
+    int b;
+    float A;
+    float S;
+    float h;
+ 
+    cout << "Input a: ";
+    cin >> a;
+    cout << "Input b: ";
+    cin >> b;
+    cout << "Input A: ";
+    cin >> A;
+    
+    h = ((a - b) / 2) * tan(A);
+    S = ((a + b) / 2) * h;
+    
+    cout << "S = " << S << endl;
+  return 0; 
+}
