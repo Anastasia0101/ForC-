@@ -1,0 +1,28 @@
+
+#include <iostream>
+#include <string>
+#include <math.h>
+
+using namespace std;
+
+int main() { 
+    int x;
+    int y;
+    float z;
+    float a;
+    float b;
+ 
+    cout << "Input x: ";
+    cin >> x;
+    cout << "Input y: ";
+    cin >> y;
+    cout << "Input z: ";
+    cin >> z;
+  
+    a = (3 + exp(y - 1)) / (1 + pow(x,2) * abs(y - tan(z)));
+    b = 1 + abs(y - x) + (pow((y - x),2) / 2) + (pow((abs(y - x)),3) / 3); 
+    cout << "a=  " << a << endl;
+    cout << "b=  " << b << endl;
+
+  return 0; 
+}
