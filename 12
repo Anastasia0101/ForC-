@@ -1,0 +1,19 @@
+
+#include <iostream>
+#include <string>
+#include <math.h>
+
+using namespace std;
+
+int main() { 
+    int a;
+    float S;
+ 
+    cout << "Input a: ";
+    cin >> a;
+  
+    S = (pow(a,2) * sqrt(3)) / 4;
+    cout << "S=  " << S << endl;
+
+  return 0; 
+}
