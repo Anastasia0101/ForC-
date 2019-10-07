@@ -1,0 +1,26 @@
+
+#include <iostream>
+#include <string>
+#include <math.h>
+
+using namespace std;
+
+int main() {
+    const float g = 6.7;
+    int r;
+    int m1;
+    int m2;
+    float F;
+ 
+    cout << "Input r: ";
+    cin >> r;
+    cout << "Input m1: ";
+    cin >> m1;
+    cout << "Input m2: ";
+    cin >> m2;
+    
+    F = g * pow(10,-11) * (m1 * pow(10,7) * m2 * pow(10,7)) / pow(r,2);
+    cout << "F=  " << F << endl;
+
+  return 0; 
+}
