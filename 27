@@ -1,0 +1,27 @@
+
+#include <iostream>
+#include <string>
+#include <math.h>
+
+using namespace std;
+
+int main() {
+    int a, b, c;
+    float A, B, C;
+    
+    cout << "Input a: ";
+    cin >> a;
+    cout << "Input b: ";
+    cin >> b;
+    cout << "Input c: ";
+    cin >> c;
+    
+    A = acos((pow(b,2) + pow(c,2) - pow(a,2)) / (2 * b * c))
+    B = acos((pow(a,2) + pow(c,2) - pow(b,2)) / (2 * a * c))
+    C = acos((pow(b,2) + pow(a,2) - pow(c,2)) / (2 * b * a))
+
+    cout << "A = " << A << endl;
+    cout << "B = " << B << endl;
+    cout << "C = " << C << endl;
+  return 0; 
+}
