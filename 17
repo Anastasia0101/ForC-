@@ -1,0 +1,25 @@
+
+#include <iostream>
+#include <string>
+#include <math.h>
+
+using namespace std;
+
+int main() {
+    const int r = 20;
+    int R;
+    int d;
+    int D;
+    float S;
+ 
+    cout << "Input R: ";
+    cin >> R;
+     
+    d = r * 2;
+    D = R * 2;
+    cout << "D=  " << D << endl;
+    cout << "d=  " << d << endl;
+    S = (3.14 * (pow(D,2) - pow(d,2))) / 4;
+    cout << "S = " << S ;
+  return 0; 
+}
