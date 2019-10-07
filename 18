@@ -1,0 +1,28 @@
+
+#include <iostream>
+#include <string>
+#include <math.h>
+
+using namespace std;
+
+int main() {
+    const float A = 0.785;
+    const float B = 1.047;
+    const float C = 1.308;
+    float a;
+    float b;
+    float c;
+    int r;
+ 
+    cout << "Input r: ";
+    cin >> r;
+     
+    a = 2 * r * sin(A);
+    b = 2 * r * sin(B);
+    c = 2 * r * sin(C);
+    
+    cout << "a =  " << a << endl;
+    cout << "b =  " << b << endl;
+    cout << "c =  " << c << endl;
+  return 0; 
+}
