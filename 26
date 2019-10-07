@@ -1,0 +1,19 @@
+
+#include <iostream>
+#include <string>
+#include <math.h>
+
+using namespace std;
+
+int main() {
+    const float r = 13.7;
+    float f, S;
+    
+    cout << "Input f: ";
+    cin >> f;
+    
+    S = ((3.14 * pow(r,2)) / 6.283) * f;
+    
+    cout << "S = " << S << endl;
+  return 0; 
+}
