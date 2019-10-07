@@ -1,0 +1,20 @@
+
+#include <iostream>
+#include <string>
+#include <math.h>
+
+using namespace std;
+
+int main() {
+    int c;
+    float S;
+    float r;
+ 
+    cout << "Input c: ";
+    cin >> c;
+    
+    r = c / (2 * 3.14);
+    S = 3.14 * pow(r,2);
+    cout << "S=  " << S << endl;
+  return 0; 
+}
