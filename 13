@@ -1,0 +1,20 @@
+
+#include <iostream>
+#include <string>
+#include <math.h>
+
+using namespace std;
+
+int main() {
+    const float g = 9.8;
+    int l;
+    float T;
+ 
+    cout << "Input l: ";
+    cin >> l;
+  
+    T = 2 * 3.14 * sqrt(l / g);
+    cout << "T=  " << T << endl;
+
+  return 0; 
+}
