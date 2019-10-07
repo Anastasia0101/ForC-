@@ -1,0 +1,39 @@
+
+#include <iostream>
+#include <string>
+#include <math.h>
+
+using namespace std;
+
+int main() {
+    int x1, y1, x2, y2, x3, y3;
+    float S;
+    float AB, BC, AC, P;
+    cout << "A()" << endl;
+    cout << "Input x1: ";
+    cin >> x1;
+    cout << "Input y1: ";
+    cin >> y1;
+    cout << "B()" << endl;
+    cout << "Input x2: ";
+    cin >> x2;
+    cout << "Input y2: ";
+    cin >> y2;
+    cout << "C()" << endl;
+    cout << "Input x3: ";
+    cin >> x3;
+    cout << "Input y3: ";
+    cin >> y3;
+    
+    AB = hypot(x2 - x1, y2 - y1);
+    BC = hypot(x3 - x2, y3 - y2);
+    AC = hypot(x3 - x1, y3 - y1);
+    
+    P = AB + BC + AC;
+    S = abs(((x1 * y2 + x2 * y3 + x3 * y1) - (y1 * x2 + y2 * x3 + y3 * x1)) / 2);
+    
+    cout << "S = " << S << endl;
+    cout << "P = " << P << endl;
+   
+  return 0; 
+}
