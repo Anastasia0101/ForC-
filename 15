@@ -1,0 +1,24 @@
+
+#include <iostream>
+#include <string>
+#include <math.h>
+
+using namespace std;
+
+int main() {
+    int a;
+    int c;
+    float b;
+    float r;
+ 
+    cout << "Input c: ";
+    cin >> c;
+    cout << "Input a: ";
+    cin >> a;
+    
+    b = sqrt(pow(c,2) - pow(a,2));
+    r = (a + b - c) / 2;
+    cout << "b=  " << b << endl;
+    cout << "r=  " << r << endl;
+  return 0; 
+}
