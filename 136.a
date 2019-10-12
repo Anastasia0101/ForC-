@@ -1,0 +1,18 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    int sum;
+    
+    cout << "Input n: " ;
+    cin >> n;
+    
+    for (int i = 1; i < n + 1; i++){
+        sum += i;
+        }
+    cout << "Summa: " << sum << endl; 
+}
