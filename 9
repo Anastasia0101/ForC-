@@ -1,0 +1,19 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    float rf, rs, rt;
+    float req;
+    
+    cout << "Input R1: ";
+    cin >> rf;
+    cout << "Input R2: ";
+    cin >> rs;
+    cout << "Input R3: ";
+    cin >> rt;
+
+    req = 1 / ((1 / rf) + (1 / rs) + (1 / rt));
+    cout << "Req: " << req << endl;
+    return 0;
+}
