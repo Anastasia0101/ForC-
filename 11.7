@@ -1,0 +1,37 @@
+#include <iostream>
+#include <string>
+#include <math.h>
+
+using namespace std;
+
+int factorial(int n);
+
+int main() { 
+    int x;
+    int y;
+    float z;
+    float a;
+    float b;
+
+    cout << "Input x: ";
+    cin >> x;
+    cout << "Input y: ";
+    cin >> y;
+    cout << "Input z: ";
+    cin >> z;
+
+    a = log10(abs((y - sqrt(abs(x)))*(x - (y / (z + (pow(x,2)) / 4)))));
+    b = x - (pow(x,2) / factorial(3)) + (pow(x,5) / factorial(5)); 
+    cout << "a=  " << a << endl;
+    cout << "b=  " << b << endl;
+
+  return 0; 
+}
+
+int factorial(int n)
+{
+    if(n > 1)
+        return n * factorial(n - 1);
+    else
+        return 1;
+}
