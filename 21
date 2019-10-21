@@ -1,0 +1,25 @@
+#include <iostream>
+#include <string>
+#include <math.h>
+
+using namespace std;
+
+int main() { 
+    int c, d;
+    float a, sum;
+    float xf, xs;
+
+    cout << "Input c: ";
+    cin >> c;
+    cout << "Input d: ";
+    cin >> d;
+
+    a = pow(-3,2) - 4 * 1 * (-(c * d));
+    xf = (-(-3) + sqrt(a)) / 2;
+    xs = (-(-3) - sqrt(a)) / 2;
+    sum = abs((pow(sin(c * pow(xf,3) + d * pow(xs,2) - c * d),3)) / sqrt(pow((c * pow(xf,3) + d * pow(xs,2) - xf),2) + 3.14)) + tan(c * pow(xf,3) + d * pow(xs,2) - xf);
+    
+    cout << "sum=  " << sum << endl;
+
+  return 0; 
+}
