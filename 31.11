@@ -1,0 +1,24 @@
+#include <iostream>
+#include <string>
+#include <math.h>
+
+using namespace std;
+
+int main() {
+   float a, a2, a4, a8, a16, a32, a64;
+    
+    cout << "Input a: ";
+    cin >> a;
+
+    a2 = a * a;
+    a4 = a2 * a2;
+    a8 = a4 * a4;
+    a16 = a8 * a8; 
+    a32 = a16 * a16;
+    a64 = a32 * a32;
+
+    cout << "a64 = " << a64 << endl;
+  
+  return 0; 
+}
+
