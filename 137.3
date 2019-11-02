@@ -1,0 +1,21 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+    int n,j;
+    float sum;
+
+    cout << "Input n: " ;
+    cin >> n;
+    
+    j = 1;
+    sum = 0;
+    for (int i = 1; i < n + 1; i++){
+        sum += abs(i + j);
+        cout << "Result: " << sum << endl; 
+        }
+}
