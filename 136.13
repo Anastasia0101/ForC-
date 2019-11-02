@@ -1,0 +1,20 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    float sum;
+
+    cout << "Input n: " ;
+    cin >> n;
+
+    sum = 0;
+    for (int i = 1; i < n + 1; i++){
+        sum += pow(sqrt(abs(i)) - i ,2);
+        }
+    cout << "Result: " << sum << endl; 
+}
