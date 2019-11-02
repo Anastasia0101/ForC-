@@ -1,0 +1,22 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    int mul;
+    float res;
+
+    cout << "Input n: " ;
+    cin >> n;
+
+    mul = 1;
+    for (int i = 1; i < n + 1; i++){
+        mul *= i;
+        }
+    res = sqrt(abs(mul));
+    cout << "Result: " << res << endl; 
+}
